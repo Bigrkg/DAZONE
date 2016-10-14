@@ -1,0 +1,69 @@
+<div class="container">
+    <div ng-controller="myProfileEdit_contactCtrl">
+    	<div class="row col-xs-12 col-sm-6">
+
+            <form>
+            	<div class="form-group">
+            		<label for="email">Email</label>
+            		<input type="email"
+            		       class="form-control"
+            		       
+                           ng-model="contactData.email"
+            		       id="login">
+            	</div>
+
+                <div class="form-group">
+                	<label for="mobile">Mobile</label>
+                	<input type="number"
+                	       class="form-control"
+                	        ng-model="contactData.phone"
+                	       id="mobile">
+                </div>
+                
+                <div class="form-group">
+                	<label for="mobile">Address</label>
+                	<textarea class="form-control"
+                	           ng-model="contactData.address"
+                	          id="address">
+                	</textarea>
+                	       
+                </div>
+
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-xs-6">
+                	        <label for="city">City</label>
+                	        <select id="city"
+                	                class="form-control"
+                	                 ng-model="contactData.city">
+                	            <option value="" >Please Choose</option>
+                	            <option value="delhi" >Delhi</option> 
+                	            <option value="gurgaon" >Gurgaon</option>   
+                	        </select> 
+                	    </div>
+                	    <div class="col-xs-6">
+                	    	<label for="locality">Locality</label>
+                	    	<select id="locality"
+                	                class="form-control"
+                	                 ng-model="contactData.locality">
+                	            <option value="" >Please Choose</option>
+                	            <option value="delhi" >Delhi</option>
+                	            <option value="noida" >Noida</option> 
+                	            <option value="gurgaon" >Gurgaon</option>   
+                	        </select>
+                	    </div>
+                	</div>
+                </div>
+
+                <div class="form-group">
+            		<button class="btn btn-primary">CANCEL</button>
+            		<button class="btn btn-info" ng-click="onSubmit()">SAVE</button>
+            	</div>
+
+                <div ng-if="successMessage" class="alert alert-danger well-sm">{{successMessage}}</div>
+
+            </form>
+            <pre>{{contactData | json}}</pre>
+    	</div>
+    </div>
+</div>

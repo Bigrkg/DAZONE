@@ -1,0 +1,40 @@
+@font-face {
+   font-family: ralewayBold;
+   src: url(/vendor/raleway-bold.TTF);
+   /*src: url(/vendor/FONTAWESOME.OTF);*/
+}
+
+@font-face {
+font-family: fontawesome;
+src: url(/vendor/FONTAWESOME.OTF);
+}
+
+@font-face {
+font-family: robotoBold;
+src: url(/vendor/ROBOTO-BOLD.TTF);
+}
+
+@font-face {
+font-family: robotoCondensedBold;
+src: url(/vendor/ROBOTOCONDENSED-BOLD.TTF);
+}
+
+@font-face {
+font-family: robotoRegular;
+src: url(/vendor/Roboto-Regular.ttf);
+}
+
+@font-face {
+font-family: MyriadProRegular;
+src: url(/vendor/MyriadPro-Regular.otf);
+}
+
+@font-face {
+font-family: openSansLight;
+src: url(/vendor/open-sans.light.ttf);
+}
+
+@font-face {
+font-family: openSansRegular;
+src: url(/vendor/open-sans.regular.ttf);
+}

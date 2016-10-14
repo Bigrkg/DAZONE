@@ -1,0 +1,18 @@
+<br><br>
+<div class="container" ng-controller="myShortListCtrl">
+	<div class="row">
+
+	    <div class="row col-xs-2">
+		    <div class="list-group">
+               <a href="" ng-class="{active:isActive('myShortList_All')}" class="list-group-item" ng-click="settemplate('myShortList_All')"><b>ALL</b></a>
+               <a href="" ng-class="{active:isActive('myShortList_Products')}" class="list-group-item" ng-click="settemplate('myShortList_Products')"><b>RODUCTS</b></a>
+               <a href="" ng-class="{active:isActive('myShortList_Blueprints')}" class="list-group-item" ng-click="settemplate('myShortList_Blueprints')"><b>BLUEPRINTS</b></a>
+               
+            </div>
+        </div>
+	
+	    <div class="row col-xs-9 col-md-offset-1">
+    	    <ng-include src="template2"></ng-include>
+        </div>
+    </div>
+</div>

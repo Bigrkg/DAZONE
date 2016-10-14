@@ -1,0 +1,71 @@
+<br><br><br><br><br><br>
+<div class="container-fluid" ng-controller="proDetailsCtrl">
+    <div class="row col-sm-12">
+        <p>HOME&nbsp;|&nbsp;PROFESSIONALS</p>
+    </div>
+    <div class="row">
+    	<div class="col-sm-12">
+    	    <div class="col-xs-6 col-sm-3" style="padding-top:36px; background: gray;height: 386px;">
+    	       
+               <img src="img/rahulbig.png" alt="image" class="img-circle img-responsive center-block" />
+               <p class="text-center" style="font: white;"><font color="white"><b>RS DESIGN STUDIO</b></font></p>
+               <p class="text-center"><font color="white">PRO</font></p>
+               <p class="text-center"><font color="white">Design-Build Firm</font></p>
+               <img src="img/verified.png" alt="image" class="img-responsive center-block" /><br>
+               <div class="text-center">
+                    		<div class="glyphicon glyphicon-star orange"></div>
+                    		<div class="glyphicon glyphicon-star orange"></div>
+                    		<div class="glyphicon glyphicon-star orange"></div>
+                    		<div class="glyphicon glyphicon-star orange"></div>
+                    		<div class="glyphicon glyphicon-star orange"></div>
+                        <font color="white">(12)</font>
+                    		
+                </div><br>
+                
+    	    </div>
+    		<div class="col-xs-6 col-sm-9" style="background: gray;" >
+            
+                
+                            <a href="" class="button" style="position: absolute; z-index: 1;background-color: #fa5400;
+                                            border: none;
+                                            color: white;
+                                            padding: 9px 20px;
+                                            text-align: center;
+                                            text-decoration: none;
+                                            display: inline-block;
+                                            font-size: 14px;
+                                            margin-left: 40px;
+                                            margin-top: 320px;
+                                            cursor: pointer"><b>Edit Business</b>
+                            </a>
+    			<img src="img/table1.png" class="img-responsive" style="height: 386px;padding-right: 0px;">
+    		</div>
+    	</div>
+    </div><br><br>
+
+
+    <div class="container">
+        <div class="row">
+          <div class="col-sm-2">
+          <span ng-class="{active:isActive('cat')}"></span>
+            <a href="" ng-class="{active:isActive('cat')}"><p><b>MY BUSINESS</b></p></a>
+          </div>
+          <div class="col-sm-2">
+            <a href=""><p><b>MY PORTFOLIO</b></p></a>
+          </div>
+          <div class="col-sm-2">
+            <a href="/#proQuestions"><p><b>QUESTIONS</b></p></a>
+          </div>
+        </div><!-- <br> -->
+
+        <div ng-view></div>
+
+
+      
+
+
+
+    </div><!-- container -->          
+</div><!-- container fluid-->
+
+

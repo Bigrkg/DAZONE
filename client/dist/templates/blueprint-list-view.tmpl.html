@@ -1,0 +1,44 @@
+                    <style type="text/css">                    
+                     p{
+                        display: inline;
+                    }
+                    </style>
+
+                     
+                      <div class="text-center slideanim">
+                        <div class="col-sm-4">
+                          <div class="hovereffect thumbnail">
+                            <div style="overflow: hidden;">
+                              <a ng-href="{{'#/blueprintsDetail/'+blueprint._id}}">
+                                <img style="width: 200px; height: 200px; overflow: hidden;" class="img-responsive" 
+                                href ng-src="{{blueprint.photoGallery[0].fileUrl}}" alt="Paris">
+                                <!-- <img width="250px" height="250px" ng-src="{{blueprint.photoGallery[0].fileUrl}}"> -->
+                              </a>
+                            </div>
+                            <a ng-href="{{'/blueprintsDetail/'+blueprint._id}}">
+                              <div class="overlay" style="font-size: 38px;">
+                                <div>
+                                   <a ng-class="isShortListed()" href ng-click="addToIdeaBook(blueprint._id)"></a>
+                                </div>
+                              </div>
+                            </a><br>
+                            <p>
+                                <a ng-href="{{'#/blueprintsDetal/'+blueprint._id}}">
+                                  <span class="blueprintTitle" style="text-decoration-line: 0px;">{{blueprint.name}}
+                                  </span>
+                                </a>
+                                <br>
+                                <span class="rupeeColor">
+                                  <p ng-class="delClass()"><del>&#x20B9;{{product.cronData.attributes.general.mrp.amount | currency:""}}</font></p>&nbsp;
+                                  <p>&#x20B9;{{ePrice | currency:""}}</p>
+                                  <p ng-if="disc"><font color="fa5400">(-{{disc}}%)</font></p>
+                                </span><br>
+                            <p><font color="#fa5400">{{product.source}}</font></p>
+                          </p>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+            

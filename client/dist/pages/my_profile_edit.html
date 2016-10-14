@@ -1,0 +1,31 @@
+<br><br><br><br><br><br>
+
+<div class="container">
+   <div class="row">
+   	
+   		<ol class="breadcrumb" style="background: white;">
+		    <li><a href="#">Home</a></li>
+		    <li class="active">Profile</li>        
+        </ol>
+   	
+   </div>
+    <div class="row">
+    	<ul class="list-inline">
+    	<div class="col-xs-2">
+    		<li  ng-class="{active:isActive('myProfileEdit_myProfile')}">
+    		<a href="" ng-click="settemplate('myProfileEdit_myProfile')"><b>MY PROFILE</b></a></li>
+    	</div>
+    	<div class="col-xs-2">	
+    		<li ng-class="{active:isActive('myShortList')}">
+    		<a href="" ng-click="settemplate('myShortList')"><b>MY SHORTLIST</b></a></li>
+    	</div>
+    	<div class="col-xs-2">
+    		<a href=""><li ng-class="{active:isActive('cat')}">
+    		<a href="" ng-click="settemplate('myProfileEdit)"><b>ACTIVITY</b></a></li>
+    	</div>
+    	</ul>
+    </div><hr>
+    <div class="row">
+    	<ng-include src="template"></ng-include>
+    </div>
+</div>

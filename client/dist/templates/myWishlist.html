@@ -1,0 +1,60 @@
+<br><br><br><br>
+
+
+
+<div class="container" style="width: 100%;">
+    <div class="row">
+        <div class="col-xs-6">
+            <h3><b>My WISHLIST</b></h3>
+        </div>
+        <div class="col-xs-3 col-xs-offset-3">
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Sort By:Date Added
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="">Newest to Oldest</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="">Oldest to Newest</a></li>
+                <!-- <li role="presentation" class="divider"></li> -->
+              </ul>
+            </div>
+      </div>
+    </div>
+                
+                  <div ng-repeat="wishlist in wishlistData">                   
+                      <div class="col-sm-4">
+                        <div ng-class="getRowClass($index)"> 
+                          <a ng-href="{{'#/shopDetails/'+wishlist.dataId}}">
+                           <img class="" class="img-responsive" href src="img/1.jpg" alt="Paris">
+                          </a>
+                           <p>{{wishlist.name}}</p>
+                        </div>
+                      </div>
+                  </div>
+           
+               
+
+</div>
+<!-- <script>
+$(document).ready(function(){
+        //Examples of how to assign the Colorbox event to elements
+        $(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
+        $(".ajax").colorbox();
+        $(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
+        $(".vimeo").colorbox({iframe:true, innerWidth:500, innerHeight:409});
+        $(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
+        $(".inline").colorbox({inline:true, width:"50%"});
+        $(".callbacks").colorbox({
+          onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+          onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+          onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+          onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+          onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+        }); 
+        //Example of preserving a JavaScript event for inline calls.
+        $("#click").click(function(){ 
+          $('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+          return false;
+        });
+      });
+</script> -->

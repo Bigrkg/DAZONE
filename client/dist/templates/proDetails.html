@@ -1,0 +1,207 @@
+<br><br><br><br><br><br>
+<div class="container-fluid" ng-controller="proDetailsCtrl">
+    <div class="row col-sm-12">
+        <p>HOME&nbsp;|&nbsp;PROFESSIONALS</p>
+    </div>
+    <div class="row">
+    	<div class="col-sm-12">
+    	    <div class="col-xs-6 col-sm-3" style="padding-top:36px; background: gray;">
+    	       
+               <img src="img/rahulbig.png" alt="image" class="img-circle img-responsive center-block" />
+               <p class="text-center" style="font: white;"><font color="white"><b>RS DESIGN STUDIO</b></font></p>
+               <p class="text-center"><font color="white">PRO</font></p>
+               <p class="text-center"><font color="white">Design-Build Firm</font></p>
+               <img src="img/verified.png" alt="image" class="img-responsive center-block" /><br>
+               <div class="text-center">
+                    		<div class="glyphicon glyphicon-star orange"></div>
+                    		<div class="glyphicon glyphicon-star orange"></div>
+                    		<div class="glyphicon glyphicon-star orange"></div>
+                    		<div class="glyphicon glyphicon-star orange"></div>
+                    		<div class="glyphicon glyphicon-star orange"></div>
+                        <font color="white">(12)</font>
+                    		
+                </div><br>
+                <div class="text-center">
+                <button class="btn btn-primary">FOLLOW</button>
+                </div>
+    	    </div>
+    		<div class="col-xs-6 col-sm-9" style="background: gray;" >
+            
+                
+                            <a href="" class="button" style="position: absolute; z-index: 1;background-color: #fa5400;
+                                            border: none;
+                                            color: white;
+                                            padding: 9px 20px;
+                                            text-align: center;
+                                            text-decoration: none;
+                                            display: inline-block;
+                                            font-size: 14px;
+                                            margin-left: 40px;
+                                            margin-top: 320px;
+                                            cursor: pointer"><b>CONTACT US</b>
+                            </a>
+    			<img src="img/table1.png" class="img-responsive" style="height: 386px;padding-right: 0px;">
+    		</div>
+    	</div>
+    </div><br><br>
+
+                  <div class="container">
+                      <div class="row nav nav-pills">
+                        <div class="col-sm-1 col-sm-offset-1">
+                           <a href="" ng-click="setTab()"> <p><b>OVERVIEW</b></p> </a>     
+                        </div>
+                        <div class="col-sm-2 col-sm-offset-1">
+                            <a href="" ng-click="setTab()"><p><b>PROJECTS(19)</b></p></a>      
+                        </div>
+                      </div><hr>
+
+                  
+                      <div class="row" ng-hide="show">
+                        <div class="col-sm-4">
+                            <p><b>ABOUT</b></p>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and</p>
+                            <p><font color="#fa5400">More[+]</font></p>
+                            <hr>
+                            <p><b>SERVICES</b></p>
+                            <P>Decorating&nbsp;|&nbsp;Home Staging&nbsp;|&nbsp;Interior Decorating&nbsp;|&nbsp;Interior Design&nbsp;|&nbsp;Lighting Design</P>
+                            <hr>
+                            <p><b>CONTACT</b></p>
+                            <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>Building 7/30, Plot No-72, Lorem Street, Union Town, Delhi-110041
+                        </div>
+                        <div class="col-sm-8">
+                           <p><b>TOP PROJECTS</b></p>
+                              <div class="row">
+                                 <div class="col-sm-4">
+                                   <img src="img/pro11.png" class="img-responsive">
+                                   <b>simply dummy text</b>
+                                   <p>13 Photos</p>
+
+                                 </div>
+                                 <div class="col-sm-4">
+                                   <img src="img/pro11.png" class="img-responsive">
+                                   <b>simply dummy text</b>
+                                   <p>13 Photos</p>
+                                 </div>
+                                 <div class="col-sm-4">
+                                   <img src="img/pro11.png" class="img-responsive">
+                                   <b>simply dummy text</b>
+                                   <p>13 Photos</p>
+                                 </div>
+                              </div><hr>
+                              <p><b>RECENT PROJECTS</b></p>
+                              <div class="row">
+                                 <div class="col-sm-4">
+                                   <img src="img/pro11.png" class="img-responsive">
+                                   <b>simply dummy text</b>
+                                   <p>13 Photos</p>
+
+                                 </div>
+                                 <div class="col-sm-4">
+                                   <img src="img/pro11.png" class="img-responsive">
+                                   <b>simply dummy text</b>
+                                   <p>13 Photos</p>
+                                 </div>
+                                 <div class="col-sm-4">
+                                   <img src="img/pro11.png" class="img-responsive">
+                                   <b>simply dummy text</b>
+                                   <p>13 Photos</p>
+                                 </div>
+                              </div>
+
+                        </div>
+                      </div>
+
+                                <!-- projects -->
+                              <div ng-show="show" class="row">
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                          <h4><b>All PROJECTS</b></h4>
+                                        </div>
+                                        <div class="col-sm-2 col-sm-offset-7">
+                                            <div class="dropdown">
+                                                <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">SORT BY
+                                                <span class="caret"></span></button>
+                                                <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                                                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">HTML</a></li>
+                                                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CSS</a></li>
+                                                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript</a></li>
+                                                  <li role="presentation" class="divider"></li>
+                                                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">About Us</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                          <img src="img/details.png" class="img-responsive">
+                                          <p><b>Kitchen</b></p>
+                                          <p>13 Photos</p>
+                                        </div>
+                                        <div class="col-sm-3">
+                                          <img src="img/details.png" class="img-responsive">
+                                          <p><b>Kitchen</b></p>
+                                          <p>13 Photos</p>
+                                        </div>
+                                        <div class="col-sm-3">
+                                          <img src="img/details.png" class="img-responsive">
+                                          <p><b>Kitchen</b></p>
+                                          <p>13 Photos</p>
+                                        </div>
+                                        <div class="col-sm-3">
+                                          <img src="img/details.png" class="img-responsive">
+                                          <p><b>Kitchen</b></p>
+                                          <p>13 Photos</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                          <img src="img/details.png" class="img-responsive">
+                                          <p><b>Kitchen</b></p>
+                                          <p>13 Photos</p>
+                                        </div>
+                                        <div class="col-sm-3">
+                                          <img src="img/details.png" class="img-responsive">
+                                          <p><b>Kitchen</b></p>
+                                          <p>13 Photos</p>
+                                        </div>
+                                        <div class="col-sm-3">
+                                          <img src="img/details.png" class="img-responsive">
+                                          <p><b>Kitchen</b></p>
+                                          <p>13 Photos</p>
+                                        </div>
+                                        <div class="col-sm-3">
+                                          <img src="img/details.png" class="img-responsive">
+                                          <p><b>Kitchen</b></p>
+                                          <p>13 Photos</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                          <img src="img/details.png" class="img-responsive">
+                                          <p><b>Kitchen</b></p>
+                                          <p>13 Photos</p>
+                                        </div>
+                                        <div class="col-sm-3">
+                                          <img src="img/details.png" class="img-responsive">
+                                          <p><b>Kitchen</b></p>
+                                          <p>13 Photos</p>
+                                        </div>
+                                        <div class="col-sm-3">
+                                          <img src="img/details.png" class="img-responsive">
+                                          <p><b>Kitchen</b></p>
+                                          <p>13 Photos</p>
+                                        </div>
+                                        <div class="col-sm-3">
+                                          <img src="img/details.png" class="img-responsive">
+                                          <p><b>Kitchen</b></p>
+                                          <p>13 Photos</p>
+                                        </div>
+                                    </div>
+                              </div>
+              </div><!-- container -->   
+</div><!-- container fluid-->
+
+

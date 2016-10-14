@@ -1,0 +1,42 @@
+                    <style type="text/css">                    
+                     p{
+                        display: inline;
+                    }
+                    </style>
+
+                     
+                      <div class="text-center slideanim">
+                        <div class="col-sm-4">
+                          <div class="hovereffect thumbnail">
+                            <div style="overflow: hidden;">
+                            <a ng-href="{{'#/shopDetails/'+product._id}}"> <!-- ng-href="{{'/shopDetails/'+product._id+'/'+product.categories[product.categories.length-1]}}" -->
+                              <img style="width: 200px; height: 200px; overflow: hidden;" class="img-responsive" href ng-src="{{product.cronData.photoGallery.default}}" alt="Paris">
+                            </a>
+                            </div>
+                            <a ng-href="{{'/shopDetails/'+product._id}}">
+                          <div class="overlay" style="font-size: 38px;">
+                          <div>
+                            <a ng-class="isShortListed()" href ng-click="addToIdeaBook(product._id)"></a> <!-- ng-click on glyph -->
+                          </div>
+
+                          </div>
+
+                          </a><br>
+                          <p>
+                          <a ng-href="{{'#/shopDetails/'+product._id}}">
+                             <span class="productCronDataTitle" style="text-decoration-line: 0px;">{{product.cronData.title}}
+                             </span>
+                          </a>
+                          <br>
+                            <span class="rupeeColor">
+                              <p ng-class="delClass()"><del>&#x20B9;{{product.cronData.attributes.general.mrp.amount | currency:""}}</font></p>&nbsp;
+                              <p>&#x20B9;{{ePrice | currency:""}}</p>
+                              <p ng-if="disc"><font color="fa5400">(-{{disc}}%)</font></p>
+                            </span><br>
+                              
+                            <p><font color="#fa5400">{{product.source}}</font></p>
+                          </p>
+                          </div>
+                        </div>
+                      </div>
+                      

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="scotchApp">
+<head>
+    <title ng-bind="title"></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style_fonts.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    
+</head>
+<body >
+<div ng-include="'pages/header.html'"></div>
+<div class="page">
+    <div ng-view></div>
+</div>
+<div ng-include="'pages/footer.html'"></div>
+<script type="text/javascript" src="/vendor/jquery.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="/vendor/jquery.bootstrap-dropdown-hover.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui/0.4.0/angular-ui.js"></script>
+
+
+<script type="text/javascript" src="/vendor/angular-animate.js"></script>
+<script type="text/javascript" src="/vendor/ui-bootstrap.js"></script>
+<script type="text/javascript" src="/vendor/ui-bootstrap-tpls.js"></script>
+<script type="text/javascript" src="/vendor/angular-cookies.js"></script>
+<script type="text/javascript" src="/vendor/angular-resource.js"></script>
+<script type="text/javascript" src="/vendor/angular-route.js"></script>
+<script type="text/javascript" src="/vendor/angular-sanitize.js"></script>
+<script type="text/javascript" src="/vendor/angular-touch.js"></script>
+<script type="text/javascript" src="/vendor/moment.js"></script>
+<script type="text/javascript" src="/common/scotchAppServices.js"></script>
+<script type="text/javascript" src="/app.js"></script>
+<script type="text/javascript" src="/routes.js"></script>
+<script type="text/javascript" src="/scripts/controller/user-form.js"></script>
+<script type="text/javascript" src="/scripts/service/user-service.js"></script>

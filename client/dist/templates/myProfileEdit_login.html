@@ -1,0 +1,100 @@
+<div class="container">
+    <div ng-controller="profileEditLoginCtrl">
+   	    <div class="row col-xs-12 col-sm-6">
+            <form>
+
+            	<div class="form-group">
+            		<label for="email">Email</label>
+            		<input type="email"
+            		       class="form-control"
+            		       ng-model="loginData.user.email"
+            		       id="email" 
+            		       disabled >
+            	</div>
+
+            	<div class="form-group">
+            		<label for="password">Enter New Password</label>
+            		<input type="password"
+            		       class="form-control"
+            		       ng-model="myProfileEdit_login.password"
+            		       id="newPassword" >
+            	</div>
+
+            	<div class="form-group">
+            		<label for="newPassword">Confirm New Password</label>
+            		<input type="password"
+            		       class="form-control"
+            		       ng-model="myProfileEdit_login.confirm"
+            		       id="confirmNewPassword" >
+            	</div>
+
+            	<div ng-if="invalidpass" class="alert alert-danger well-sm">{{invalidpass}}</div>
+
+            	<div class="form-group">
+            		<button class="btn btn-primary">CANCEL</button>
+            		<button class="btn btn-info" ng-click="onSubmit()">SAVE</button>
+            	</div>
+                <div ng-if="successMessage" class="alert alert-danger well-sm">{{successMessage}}</div>
+            </form>
+            <pre>{{myProfileEdit_login | json}}</pre>
+   	    </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!--  <div class="row col-sm-6">
+        <form>
+            <div ng-controller="profileEditLoginCtrl">
+					<div class="form-group">
+					<div class="row col-sm-12">
+						<h4><b>LOG IN</b></h4>
+					</div>  
+					</div>  
+					<br>
+
+
+					<div class="form-group">
+							<label>Email</label>
+							<input type="email" class="form-control" ng-model="email" name="password" disabled/> 
+					</div>
+
+
+					<div class="form-group">
+						<label>Enter New Password</label>
+							<input type="password" id="txtPassword" class="form-control" ng-model="newPassword" name="password"/><br>	
+					    <label>Confirm New Password</label>
+							<input type="password" id="txtConfirmPassword" class="form-control" ng-model="confirmPassword" name="password"/>
+					</div>
+					<div ng-if="invalidpass" class="alert alert-danger well-sm">{{invalidpass}}</div>
+					<div class="row">
+					      	<div class="col-sm-12 pull-right">
+						    	<button type="submit" class="btn btn-primary">CANCEL</button>
+							    <button type="submit" ng-click="putLoginProfile()" class="btn btn-info">SAVE</button>
+						    </div>
+					</div>
+					<div class="row col-sm-12"><br></div>
+					    <div class="row col-sm-12">
+					        <div ng-if="message" class="alert alert-danger well-sm">{{message}}</div>
+					    </div>
+					    <div class="row col-sm-12"><br></div>
+					
+					
+            </div>
+        </form>
+    </div> -->
+
+   

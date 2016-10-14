@@ -1,0 +1,18 @@
+<br><br>
+<div class="container" ng-controller="myProfileCtrl">
+	<div class="row">
+
+	    <div class="row col-xs-2">
+		    <div class="list-group">
+               <a href="" ng-class="{active:isActive('myProfileEdit')}" class="list-group-item" ng-click="settemplate('myProfileEdit')"><b>PROFILE</b></a>
+               <a href="" ng-class="{active:isActive('myProfileEdit_login')}" class="list-group-item" ng-click="settemplate('myProfileEdit_login')"><b>LOG IN</b></a>
+               <a href="" ng-class="{active:isActive('myProfileEdit_contact')}" class="list-group-item" ng-click="settemplate('myProfileEdit_contact')"><b>CONTACT</b></a>
+               
+            </div>
+        </div>
+	
+	    <div class="row col-xs-9 col-md-offset-1">
+    	    <ng-include src="template1"></ng-include>
+        </div>
+    </div>
+</div>

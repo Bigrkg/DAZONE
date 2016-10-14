@@ -1,0 +1,58 @@
+<!-- sidebar -->
+<div ng-controller="catalogCtrl">
+
+
+
+
+        <div class="col-sm-2">
+            <ul class="nav nav-pills nav-stacked">
+                
+                <li ng-class="{active:isActive('cat')}">
+                    <a  href="" ng-click="settemplate('cat')">Category</a>
+                </li>
+                <li ng-class="{active:isActive('cat')}">
+                    <a href="" ng-click="settemplate('atr')">Attribute Set</a>
+                </li ng-class="{active:isActive('cat')}">
+                <li ng-class="{active:isActive('cat')}">
+                    <a href="" ng-click="settemplate('products')">Products</a>
+                </li>
+                <li ng-class="{active:isActive('cat')}">
+                    <a href="" ng-click="settemplate('blueprints')">BluePrints</a>
+                </li>
+                <li ng-class="{active:isActive('cat')}">
+                    <a href="" ng-click="settemplate('cron')">Cron</a>
+                </li>
+            </ul>
+        </div>
+       
+
+<div class="col-sm-10">
+
+          <ng-include src="template"></ng-include>
+          </div>
+         <!--  <div ng-if="templateType === 1" ng-include="attributeSets.html" 
+               ng-controller="catalogCtrl"></div>
+
+           <div ng-if="templateType === 2" ng-include="template2" 
+               ng-controller="Template2Controller"></div> -->
+</div>        
+              
+
+
+
+        <!-- <button ng-click="countt()">
+       button
+    </button>
+    count: {{ count }} -->
+
+
+
+         <!-- <div ng-view></div> -->
+        <!--  <script type = "text/ng-template" id = "cron.html">  
+         // hiiiiii {{cronMessage}}
+         </script> -->
+        
+        
+        <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+     

@@ -1,0 +1,221 @@
+<br><br><br><br>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <ol class="breadcrumb" style="background-color: white;">
+            <li><a href="">Home</a></li>
+            <li><a href="">Shop</a></li>
+            <li><a href="">Living</a></li>
+            <li class="active">Furnitures</li>
+          </ol>
+        </div>
+    </div>
+
+    <div class="row">
+    	<div class=" col-sm-7 col-lg-7">
+    		    <div class="imgresponsive">
+    			     <img ng-src="{{productDetailData.cronData.photoGallery.default}}" class="img-responsive">
+                </div>
+    		<div class="row col-xs-12">
+    			<br>
+    		</div>
+    		<div class="row col-xs-12 col-sm-12"><hr style="display: block;
+                        height: 1px;
+                        border-top: 1px solid #ccc;
+                        margin: 1em 0;"/>
+             </div>
+            <div class="row">
+            	<div class="col-xs-12">
+            		<img src="img/sd8.png" class="img-responsive" style="margin: 0 auto;"/>
+            	</div>
+            </div><br>
+            <div class="row">
+            	<div class="col-xs-12">
+            		<h4><b>ABOUT THE SELLER</b></h4>
+            	</div>
+            </div>
+            <div class="row">
+            	<div class="col-xs-12">
+            		<h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's lorem ipsum standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it.</h5>
+            	</div>
+            </div>
+            <div class="row">
+            	<div class="col-xs-12">
+            		<a href=""><p><font color="red">Other products from this seller></font></p></a>
+            	</div>
+            </div>
+    	</div>
+
+
+    	<div class=" col-sm-5" style="margin-top: -22px;">
+    		<div class="row">
+    			<div class="col-xs-12">
+    				<h2><b>{{productTitle()}}</b></h2>
+    				<!-- <h2><b>(WALNUT FINISH</b></h2> -->
+    				<p>{{productCategory()}}</p>
+    				<h4><b>&#8377;{{price}}</b></h4>
+    			</div>
+    		</div><br>
+    		<div class="row inline">
+    			<div class="col-xs-4">
+                <!-- <a ng-href="{{productDetailData.cronData.productUrl}}"> <button class="button" type="button" class="btn btn-primary btn-sm sharp">SHOP</button></a> -->
+
+
+                        <a ng-href="{{productDetailData.cronData.productUrl}}" class="button" style="background-color: #fa5400;
+				            border: none;
+				            color: white;
+				            padding: 10px 30px;
+				            text-align: center;
+				            text-decoration: none;
+				            font-size: 13px;
+				            cursor: pointer"><b>SHOP</b>
+			            </a>
+            	</div>
+            	<div class="col-xs-3" style="margin-top: -1%;margin-left: -6%;">
+                        <h5>@{{productDetailData.source}}.com</h5>
+            	</div>
+    		</div>
+    		<div class="row col-xs-12 col-sm-12"><hr style="display: block;
+                        height: 1px;
+                        border-top: 1px solid #ccc;
+                        margin: 1em 0;">
+             </div>
+             <div class="row">
+             	<div class="col-xs-12">
+             		<h5>{{productDescription()}}</h5>
+             	</div>
+             </div>
+            <div class="row" ng-repeat="attr in productDetailData.attributes">
+			             <div class="col-xs-5 col-sm-5 col-sm-offset-1">
+			                <p><b>{{attr.attributeName}}:</b></p>
+			             </div>
+			             <div class="col-xs-6 col-sm-6 col-lg-6">
+			                <p>{{attributeValues(attr.attributeValue)}}</p>
+			             </div>
+		    </div>
+			
+			
+            <!-- <div class="row">
+            	<div class="col-xs-12">
+            		<h4><b>FEATURED IN LOOKS</b></h4>
+            	</div>
+            </div>
+            <div class="row">
+            		<div class="col-xs-4">
+            			<img src="img/sd9.png" class="img-responsive">
+            			<p>lorem incidudent ipsum kitchen</p>
+            		</div>
+            		<div class="col-xs-4">
+            			<img src="img/sd10.png" class="img-responsive">
+            			<p>Exceptior sint occantient</p>
+            		</div>
+            		<div class="col-xs-4">
+            			<img src="img/sd11.png" class="img-responsive">
+            			<p>Sofa ipsum kitchen</p>
+            		</div>
+            </div><br>
+            <div class="row">
+            		    <div class="col-xs-4">
+            			    <img src="img/sd12.png" class="img-responsive">
+            			    <p>bedroom incidudent ipsum</p>
+            		    </div>
+            </div> -->
+            
+            <div class="row">
+            	<div class="col-xs-12">
+            		<h4><b>RELATED PRODUCTS</b></h4>
+            	</div>
+            </div>
+            <div class="row">
+            		<div class="col-xs-4">
+            			<img src="img/sd13.png" class="img-responsive">
+            			lorem kitchen<br>
+            			41200
+            			<p><font color="#fa5400">amazon.in</font></p>
+            		</div>
+            		<div class="col-xs-4">
+            			<img src="img/sd14.png" class="img-responsive">
+            			Exceptior Bookshelf<br>
+            			$90000<br>
+                        <font color="#fa5400">flipkart.com</font>
+            		</div>
+            		<div class="col-xs-4">
+            			<img src="img/sd15.png" class="img-responsive">
+            			Sofa ipsum kitchen<br>
+            			$39000
+            			<font color="#fa5400">pepperfry.com</font>
+            		</div>
+            </div>
+            <div class="row">
+            		    <div class="col-xs-4">
+            			    <img src="img/sd16.png" class="img-responsive">
+            			    bedroom incidudent
+            			    <font color="#fa5400">urbanladder.com</font>
+            		    </div>
+            		    <div class="col-xs-4">
+            			    <img src="img/sd17.png" class="img-responsive">
+            			    bedroom incidudent
+            			    <font color="#fa5400">amazon.com</font>
+            		    </div>
+            		    <div class="col-xs-4">
+            			    <img src="img/sd14.png" class="img-responsive">
+            			    bedroom incidudent
+            			    <font color="#fa5400">flipkart.com</font>
+            		    </div>
+            </div>
+            <div class="row col-xs-12 col-sm-12"><hr style="display: block;
+                        height: 1px;
+                        border-top: 1px solid #ccc;
+                        margin: 1em 0;">
+                    
+            </div>
+            <div class="row">
+            	<div class="col-xs-12">
+            		<h4><b>SIMILAR PRODUCTS</b></h4>
+            	</div>
+            </div>
+            <div class="row">
+            		<div class="col-xs-4">
+            			<img src="img/sd13.png" class="img-responsive">
+            			lorem kitchen<br>
+            			41200
+            			<p><font color="#fa5400">amazon.in</font></p>
+            		</div>
+            		<div class="col-xs-4">
+            			<img src="img/sd14.png" class="img-responsive">
+            			Exceptior Bookshelf<br>
+            			$90000<br>
+                        <font color="#fa5400">flipkart.com</font>
+            		</div>
+            		<div class="col-xs-4">
+            			<img src="img/sd15.png" class="img-responsive">
+            			Sofa ipsum kitchen<br>
+            			$39000
+            			<font color="#fa5400">pepperfry.com</font>
+            		</div>
+            </div>
+            <div class="row">
+            		    <div class="col-xs-4">
+            			    <img src="img/sd16.png" class="img-responsive">
+            			    bedroom incidudent
+            			    <font color="#fa5400">urbanladder.com</font>
+            		    </div>
+            		    <div class="col-xs-4">
+            			    <img src="img/sd17.png" class="img-responsive">
+            			    bedroom incidudent
+            			    <font color="#fa5400">amazon.com</font>
+            		    </div>
+            		    <div class="col-xs-4">
+            			    <img src="img/sd14.png" class="img-responsive">
+            			    bedroom incidudent
+            			    <font color="#fa5400">flipkart.com</font>
+            		    </div>
+            </div><br>
+            <div class="row col-xs-12 text-center">
+            	<p> < 1/2 > </p>
+            </div>
+            </div>
+    	</div>
+    </div>
+    </div>
+</div>

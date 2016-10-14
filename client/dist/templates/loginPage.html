@@ -1,0 +1,64 @@
+<br><br><br><br><br><br><br><br><br>
+
+<div class="container">
+  <div>
+    <!-- <div class="panel-heading">LOGIN</div>
+    <div class="panel-body"> -->
+    <div class="col-xs-12 col-sm-4 col-sm-offset-4">
+      <!-- <div class="row">
+        <img src="img/login1.png" class="img-responsive">
+      </div><br>
+      <div class="row">
+        <img src="img/login2.png" class="img-responsive"><br>
+      </div>
+      <div class="row">
+                  <div class="col-sm-5">
+                    <hr>
+                  </div>
+                  <div class="col-sm-1">
+                    OR
+                  </div>
+                  <div class="col-sm-5">
+                    <hr>
+                  </div>
+      </div> -->
+      <div class="row">
+        <form role="form">
+                  <div id="alert-danger" class="alert alert-danger text-center" ng-show="loginError">
+                  {{loginError}}
+                  </div>
+                  <div id="login">
+                  </div>
+                  <form novalidate>
+                  <div class="form-group">
+                      <label for="email"><span class="glyphicon glyphicon-user"></span> Email
+                      </label>
+                      <input type="email" ng-model="email" class="form-control" id="email" placeholder="Enter email" required><br>
+                      <div >
+                        <uib-alert class="well-sm" ng-if="emailRequired" type="{{type}}" close="closeAlert()" dismiss-on-timeout="{{timeout}}"><!-- {{emailRequired}} --></uib-alert>
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password
+                      </label>
+                      <input ng-model="password" type="password" class="form-control" id="psw" placeholder="Enter password" required>
+                      <br>
+                      <div>
+                        <uib-alert class="well-sm" ng-if="passwordRequired" type="{{type}}" close="closeAlert()" dismiss-on-timeout="{{timeout}}"><!-- {{passwordRequired}} --></uib-alert>
+                      </div>
+                  </div>
+                  <div class="checkbox">
+                      <label><input type="checkbox" value="" checked>Remember me</label>
+                  </div>
+                  <button ng-click="postData()" type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Login
+                  </button><br>
+                  <div class="text-center">
+                <a href="/#forgotYourPassword"><p>Forgot your password? </p></a>
+                <p>Dont have an account? <a id="signup" href="/#signup"> Sign up here!</a></p>
+                </div>
+                 </form>
+                 </form>
+      </div> 
+    </div>
+  </div>
+</div>

@@ -1,0 +1,113 @@
+// First example, stylus syntax
+
+// Set colors as variables
+colorone = #F2F2F4
+colortwo = #CCC
+
+// Set layout values as variables
+wrapper_width = 1200
+padding = 20
+
+// Reusable code chunk for common heading values
+headingStyle()
+	font-family 'Open Sans'
+	font-weight 400
+	line-height 1.618em
+
+// Utilize the above to create styles
+.wrapper
+	background-color colorone
+	border 1px solid colortwo
+	width unit( wrapper_width - 2 * padding, px)
+	padding unit( padding, px )
+	margin 0 auto
+
+h1
+	headingStyle()
+	font-size 2em
+
+h2
+	headingStyle()
+	font-size 1.5em
+
+.inner
+	padding unit( padding, px )
+	background-color colortwo
+
+.post
+	padding unit( padding, px )
+	background-color colorone
+
+
+
+// Regular CSS syntax
+.mystyle {
+	color: #000;
+	background-color: #fff;
+	border: 1px solid #ccc;
+}
+
+// Curly brackets removed
+.mystyle
+	color: #000;
+	background-color: #fff;
+	border: 1px solid #ccc;
+
+// Semicolons removed
+.mystyle
+	color: #000
+	background-color: #fff
+	border: 1px solid #ccc
+
+// Colons removed
+.mystyle
+	color #000
+	background-color #fff
+	border 1px solid #ccc
+
+
+
+// Example mixin and function use
+
+dosomething = 10
+somethingelse = 2
+
+border_and_bg( border_on, border_color, bg_on, bg_color )
+	if border_on == true
+		border 1px solid border_color
+	else
+		border 0
+	if bg_on == true
+		background-color bg_color
+	else
+		background-color transparent
+
+function-name( parameter )
+	dosomething + parameter / somethingelse
+
+.callem
+	border_and_bg true #000 false #fff
+	font-size function-name( 6 )
+
+
+
+// Example use of rest parameters
+
+padded_box( box_sizing, args...)
+	box-sizing box_sizing //using Nib mixin
+	padding args
+
+.abox
+	padded_box border-box 5px 16px
+
+.anotherbox
+	padded_box content-box 20px
+
+
+
+// Example property lookup
+
+.onemorepaddedbox
+	padding-left 20px
+	padding-right 30px
+	width 1200px - @padding-left - @padding-right
